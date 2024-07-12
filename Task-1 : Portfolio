@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+* {
+margin:0;
+padding:0;
+max-width:100%;
+font-family: "EB Garamond", serif;
+}
+h1{
+font-size:65px;
+
+}
+h2{
+font-size:40px;
+
+}
+header{
+background-color:#f8f7f7;
+display:flex;
+justify-content: space-between;
+position: fixed;
+width:100%;
+padding:40px 30%;
+margin: 0;
+}
+nav a{
+font-size:20px;
+
+font-weight:500;
+margin: 0 20px;
+border-bottom: 3px solid transpatrent;
+
+text-shadow: 2px white;
+transition: 1s ease;
+text-decoration:none;
+}
+
+.home{
+background-color:#f3eaea;
+height:90vh;
+display:flex;
+gap:10em;
+align-items:center;
+padding:50px 20%;
+
+}
+.image{
+border-radius:50%;
+height:300px;
+width:300px;
+}
+.about{
+background-color:#D9CCE1;
+height:70vh;
+align-items:center;
+padding:30px 20%;
+line-height:2;
+text-indent:20px;
+font-size:18px;
+}
+.res{
+display:flex;
+align-items:center;
+gap:5em;
+padding:20px 20%;
+}
+.res1,.res2 {
+ background-color:#f8f7f7;
+cursor:pointer;
+padding:15px 20px;
+border:1.5px solid transparent;
+border-radius: 8px;
+font-size:15px;
+letter-spacing:1px;
+transition:0.3 ease;
+
+}
+.res1 a{
+  
+text-decoration:none;
+}
+.res2 a{
+   
+text-decoration:none;
+}
+.skills{
+background-color:#D9CCE1;
+height:60vh;
+padding:15px;
+}
+.skill{
+display:flex;
+gap:10em;
+padding:60px 25%;
+}
+
+ul{
+line-height:2.5;
+}
+.project{
+background-color:#D9CCE1;
+height:110vh;
+padding:15px;
+
+}
+.projects{
+
+display:grid;
+align-items:center;
+grid-template-columns: repeat(2, 2fr);
+padding-left:20%;
+column-gap:10px;
+row-gap:40px;
+padding:5%;
+}
+.pro1{
+height:300px;
+width:300px;
+text-align:center;
+text-decoration:none;
+color:rgb(106, 90, 205);
+font-size:20px;
+
+}
+.pro1 img{
+border: 8px solid grey;
+}
+.pro2 img{
+border: 8px solid grey;
+}
+
+.pro3 img{
+border: 8px solid grey;
+}
+
+.pro4 img{
+border: 8px solid grey;
+}
+
+
+.pro2{
+height:300px;
+width:300px;
+text-align:center;
+text-decoration:none;
+color:rgb(106, 90, 205);
+font-size:20px;
+}
+.pro3{
+height:300px;
+width:300px;
+text-align:center;
+text-decoration:none;
+color:rgb(106, 90, 205);
+font-size:20px;
+}
+
+.pro4{
+height:300px;
+width:300px;
+text-align:center;
+text-decoration:none;
+color:rgb(106, 90, 205);
+font-size:20px;
+}
+.cont{
+background-color:#f3eaea;
+height:50vh;
+padding:15px;
+}
+.contact{
+  padding:10px;
+line-height:2;
+padding:50px 20%;
+font-size: 18px;
+}
+.phone{
+height:40px;
+width:40px;
+display:flex;
+gap:0.7em;
+padding-bottom:6px;
+}
+.mail{
+height:40px;
+width:33px;
+display:flex;
+gap:0.7em;
+padding-bottom:6px;
+
+}
+.mail a{
+text-decoration:none;
+}
+.linked{
+height:40px;
+width:40px;
+display:flex;
+gap:0.7em;
+padding-bottom:6px;
+
+}
+.linked a{
+text-decoration:none;
+}
+.copy{
+text-align:center;
+width:100%;
+background-color:grey;
+}
+
+span{
+color:#A47786;
+}
+@media only screen and (max-width:600px){
+header{background-color:transparent;}
+}
+
+
+</style>
+    <title>portfolio</title>
+   
+  </head>
+  <body>
+<header>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Skills">Skills</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Contact">Contact</a>
+     
+    </nav>
+</header>
+    <div class="home" id="Home">
+      <h1>Hey! I'm <span>Pallavi</span></h1>
+      <img class="image" src="./portfoliofinal_files/pic2.jpg">
+    </div>
+
+    <section class="about" id="About">
+      <h2>About</h2>
+      <p>I am a UG student in computerScince department,passionate about building responsive and user-friendly websites.Apart from technical skills, I have always been passionate about learning new things, and I am willing to take up new challenges to enhance my skills and knowledge.
+<div class="strong">
+      <br><strong><i>Take a look at my work below.</i></strong></p>
+    </div>
+      <section class="res">
+       <button class="res1"> <a target="_blank"  href="https://www.canva.com/design/DAGKi3JHGw8/nMRX2rsSKhk6jhZpcmYPJQ/view?utm_content=DAGKi3JHGw8&utm_campaign=designshare&utm_medium=link&utm_source=editor" download><b>My Resume</b></a></button>
+       <button class="res2"> <a target="_blank"   href="https://freecodecamp.org/certifications/Pallavikadimi/responsive-web-design"><b>My Certification</b></a></button>
+      </section>
+   </section>
+<div class="skills">
+<h2>Skills</h2>
+<div class="skill" id="Skills">
+  
+   <ul class="list">
+  <li>HTML</li>
+<li>CSS</li>
+<li>PYTHON</li>
+<li>PROBLEM-SOLVING</li>
+
+</ul>
+</div>
+ </div>
+<div class="project">
+<h2>Projects</h2>
+    <section class="projects" id="Projects">
+      
+      <a class="pro1" href="file:///C:/Users/Pallavi/OneDrive/Desktop/Restaurant%20Customer%20Survey%20Form.html"><img src="file:///C:/Users/Pallavi/Downloads/Pictures/Screenshots/Screenshot%20(37).png"><b>Survey Form</b></a>
+ 
+      <a class="pro2" href="file:///C:/Users/Pallavi/OneDrive/Documents/build-a-tribute-page.htm"><img src="C:\Users\Pallavi\Downloads\Pictures\Screenshots\Screenshot (38).png"><b>Tribute Page</b></a>
+
+ <a class="pro3" href="file:///C:/Users/Pallavi/OneDrive/Desktop/documentation.htm"><img src="C:\Users\Pallavi\Downloads\Pictures\Screenshots\Screenshot (39).png"><b>Documentation Page</b></a>
+
+<a class="pro4" href="file:///C:/Users/Pallavi/OneDrive/Desktop/landing.htm"><img src="C:\Users\Pallavi\Downloads\Pictures\Screenshots\Screenshot (40).png"><b>Landing Page</b></a>
+
+    </section>
+</div>
+<div class="cont">
+   <h2>Contact</h2>
+    <footer class="contact" id="Contact">   
+   <div class="icons">
+     <div class="phone">
+   <img src="https://img.icons8.com/?size=100&id=jShwZ2RCyPSO&format=png&color=000000" ></img>
+  <p>9390181021</p>
+   </div>
+   <div class="mail">
+<img src="https://img.icons8.com/?size=100&id=12623&format=png&color=000000"></img>
+<a target="_blank" href="pallavikadimii@gmail.com">Gmail</a>
+   </div>
+  <div class="linked">
+  <img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000"></img>
+<a target="_blank" href="https://www.linkedin.com/in/pallavi-kadimi-08980b313">LinkedIn</a>
+</div>
+</div>
+</div>
+<section class="copy">
+<p>copyrite&copy;2024</p>
+
+</section>
+    </footer>
+  </body>
+</html>
