@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <style>
+            * {
+                font-family: "Rubik", sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+            }
+            body {
+                border: 2px solid black;
+                width: 40%;
+                margin-left: 25%;
+                padding-right: 5px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-radius: 10%;
+            }
+            .display {
+                margin-left: 18%;
+                width: 55%;
+                height: 7vh;
+                border-radius: 5%;
+            }
+            .buttons {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                width: 35%;
+                margin-left: 10%;
+                padding: 15px 20px;
+                justify-content: space-between;
+                gap: 0.4em;
+                font-size: 60px;
+                border-radius: 25px;
+                transform: scale(0.99);
+            }
+            .value {
+                padding: 25px;
+                background-color: #dfe3e1;
+                border-radius: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <input class="display" type="text" name="display" readonly>
+            </div>
+            <div class="buttons">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="AC" onclick="clearDisplay()">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="DE" onclick="deleteLastChar()">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="00" onclick="appendToDisplay('00')">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="/" onclick="appendToDisplay('/')">
+            
+                <input class="value" type="button" value="7" onclick="appendToDisplay('7')">
+                <input class="value" type="button" value="8" onclick="appendToDisplay('8')">
+                <input class="value" type="button" value="9" onclick="appendToDisplay('9')">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="*" onclick="appendToDisplay('*')">
+            
+                <input class="value" type="button" value="4" onclick="appendToDisplay('4')">
+                <input class="value" type="button" value="5" onclick="appendToDisplay('5')">
+                <input class="value" type="button" value="6" onclick="appendToDisplay('6')">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="-" onclick="appendToDisplay('-')">
+            
+                <input class="value" type="button" value="1" onclick="appendToDisplay('1')">
+                <input class="value" type="button" value="2" onclick="appendToDisplay('2')">
+                <input class="value" type="button" value="3" onclick="appendToDisplay('3')">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="+" onclick="appendToDisplay('+')">
+            
+                <input class="value" type="button" value="%" onclick="appendToDisplay('%')">
+                <input class="value" type="button" value="0" onclick="appendToDisplay('0')">
+                <input class="value" type="button" value="." onclick="appendToDisplay('.')">
+                <input style="background-color:#b3bfce;color:#4B76C3" class="value" type="button" value="=" onclick="calculateResult()">
+            </div>
+        </form>
+        <div>
+            <script>
+                const display = document.querySelector(".display");
+                let output = "";
+
+                const clearDisplay = () => {
+                    output = "";
+                    display.value = output;
+                };
+
+                const deleteLastChar = () => {
+                    output = output.toString().slice(0, -1);
+                    display.value = output;
+                };
+
+                const appendToDisplay = (value) => {
+                    output += value;
+                    display.value = output;
+                };
+
+                const calculateResult = () => {
+                    try {
+                        output = eval(output.replace("%", "/100"));
+                        display.value = output;
+                    } catch (e) {
+                        display.value = "Error";
+                        output = "";
+                    }
+                };
+            </script>
+        </div>
+    </body>
+</html>
